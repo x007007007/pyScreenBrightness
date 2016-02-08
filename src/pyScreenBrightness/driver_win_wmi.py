@@ -36,7 +36,7 @@ class WinWMIMonitor(Monitor):
     def min(self):
         return self.bnm.WmiSetBrightness(self.bn.level[0], 0)
 
-    def percents(self, range):
+    def percent(self, range):
         assert 0 <= range <= 100, "out of percent range"
         return self.bnm.WmiSetBrightness(int(round(range)), 0)
     
@@ -72,7 +72,7 @@ class WinWMIMonitors(Monitors):
         for k in self.data:
             self.data[k].min()
 
-    def percents(self, percents):
+    def percent(self, percents):
         for k in self.data:
             self.data[k].percents(percents)
 

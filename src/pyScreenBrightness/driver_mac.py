@@ -15,7 +15,7 @@ class MacMonitor(Monitor):
     def reset(self):
         pass
 
-    def percents(self, range):
+    def percent(self, range):
         pass
 
 
@@ -29,7 +29,7 @@ class MacMonitors(Monitors):
     def min(self):
         pass
 
-    def percents(self, range):
+    def percent(self, range):
         pass
 
     def reset(self):

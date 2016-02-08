@@ -9,7 +9,7 @@ class Monitor(object):
         pass
 
     @abc.abstractmethod
-    def percents(self, range):
+    def percent(self, range):
         pass
 
     @abc.abstractmethod
@@ -27,7 +27,7 @@ class Monitor(object):
 
 class Monitors(UserList):
     @abc.abstractmethod
-    def percents(self, range):
+    def percent(self, range):
         pass
 
     @abc.abstractmethod
